@@ -1,7 +1,7 @@
 """ More Variables and Printing """
 
 # Exercise 5_1 - More Variables and Printing
-# Removing "" from the variable names
+# Removing "my_" from the variable names
 
 
 name = "Zed A. Shaw"
