@@ -9,7 +9,7 @@ from urllib.request import urlopen
 WORD_URL = "http://learncodethehardway.org/words.txt"
 WORDS = []
 
-PURCHASES = {
+PHRASES = {
     "class %%%(%%%):": "Make a class named %%% that is-a %%%.",
     "class %%%(object):\n\tdef __init__(self, ***)": "class %%% has-a __init__ that takes self and *** params.",
     "class %%%(object):\n\tdef ***(self, @@@)": "class %%% has-a function *** that takes self and @@@ params.",
@@ -23,7 +23,7 @@ PURCHASES = {
 if len(sys.argv) == 2 and sys.argv[1] == "english":
     PHRASE_FIRST = True
 else:
-    PHRADE_FIRST = False
+    PHRASE_FIRST = False
 
 # load up the words from the website
 for word in urlopen(WORD_URL).readlines():
@@ -32,11 +32,11 @@ for word in urlopen(WORD_URL).readlines():
 
 def convert(snippet, phrase):
     class_names = [w.capitalize() for w in random.sample(WORDS, snippet.count("%%%"))]
-    other_names = random.sample(WORDS, snippet_count("***"))
+    other_names = random.sample(WORDS, snippet.count("***"))
     results = []
     param_names = []
 
-    for i in range(0, snippet_count("@@@")):
+    for i in range(0, snippet.count("@@@")):
         param_count = random.randint(1, 3)
         param_names.append(", ".join(random.sample(WORDS, param_count)))
 
@@ -62,7 +62,7 @@ def convert(snippet, phrase):
 # keep going until they hit CTRL-D
 try:
     while True:
-        snippets = list(PHRASE.keys())
+        snippets = list(PHRASES.keys())
         random.shuffle(snippets)
 
         for snippet in snippets:
