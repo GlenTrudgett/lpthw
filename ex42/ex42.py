@@ -27,10 +27,11 @@ class Cat(Animal):
 class Person(object):
 
     def __init__(self, name):
+        ## ??
         self.name = name
 
-    ## Person has-a pet of some kind
-    self.pet = None
+        ## Person has-a pet of some kind
+        self.pet = None
 
 
 ## ??
@@ -40,7 +41,7 @@ class Employee(Person):
         ## ?? hmm what is this strange magic?
         super(Employee, self).__init__(name)
         ## ??
-        self.salary
+        self.salary = salary
 
 
 ## ??
