@@ -7,3 +7,8 @@ import mystuff
 # print(mystuff["apple"])
 
 mystuff.apple()
+print(mystuff.tangerine)
+
+# mystuff["apple"]  # get apple from dict
+mystuff.apple()  # get applie form the module
+mystuff.tangerine  # same thing, it's just a variable
