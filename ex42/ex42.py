@@ -26,7 +26,7 @@ class Cat(Animal):
 ## ??
 class Person(object):
 
-    def __init__(self, name):
+    def __init__(self, name, pet):
         ## ??
         self.name = name
 
