@@ -14,6 +14,9 @@ I'll do a list:
 \t* Catnip\n\t* Grass
 """
 
+# Changing the """  """ to ''' ''' makes it a litter easier to reads and also you wouldn't have
+# to worry about using quotes in the text.
+
 print(tabby_cat)
 print(persian_cat)
 print(backslash_cat)
