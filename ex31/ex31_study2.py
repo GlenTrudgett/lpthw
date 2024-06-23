@@ -1,10 +1,10 @@
 """ Making Decisions """
 
-# Exercise 31 (Study Question 1)- Making Decisions
+# Exercise 31 (Study Question 2)- Making Decisions
 
 print(
     """You enter a dark room with doors.
-Do you go through door #1,door #2 or door #3?"""
+Do you go through door #1 or door #2?"""
 )
 
 door = input("> ")
@@ -40,18 +40,5 @@ elif door == "2":
         print("The insanity rots your eyes into a pool of muck.")
         print("Good job!")
 
-elif door == "3":
-    print("You walk through a patch of halucenigenic Mushrooms.")
-    print("1. You are a machine and it has not affect on you.")
-    print("2. The taste of the air is so .. aqua!?")
-
-    insanity = input("> ")
-
-    if insanity == "1":
-        print("You walked straight backed into the next dimension, fearlessly.")
-        print("Good job!")
-    else:
-        print("You are like, totallly tripp'n dude.")
-        print("Good job!")
 else:
     print("You stumble around and fall on a knife and die.  Good job!")
