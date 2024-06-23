@@ -13,4 +13,8 @@ elements = range(0, 6)
 print(elements)
 
 
-# This doesn't work and you need to use the for-loop to iterate through.
+# This doesn't appear to  work and you need to use the for-loop to iterate through.
+# trying something explicit
+
+elements = list(range(0, 6))
+print(elements)
