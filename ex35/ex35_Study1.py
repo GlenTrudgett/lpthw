@@ -1,6 +1,6 @@
 """ Branches and Functions """
 
-# Exercise 35 - Branches and Fuctions
+# Exercise 35 (Study Question 1)- Branches and Fuctions
 
 from sys import exit
 
